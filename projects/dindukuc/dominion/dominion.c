@@ -672,7 +672,7 @@ int adventurerCard(int drawntreasure, struct gameState *state, int currentPlayer
 
 int smithyCard(struct gameState *state, int currentPlayer, int handPos, int i){
   //+3 Cards
-  for (i = 0; i < 3; i++){
+  for (i = 0; i <= 3; i++){
     drawCard(currentPlayer, state);
     }
 
@@ -691,17 +691,17 @@ int villageCard(struct gameState *state, int currentPlayer, int handPos){
       state->numActions = state->numActions + 2;
 
       //discard played card from hand
-      discardCard(handPos, currentPlayer, state, 0);
+     // discardCard(handPos, currentPlayer, state, 0);
       return 0;
 }
 
-int greatHall(struct gameState *state, int currentPlayer, int handPos){
+int greatHallCard(struct gameState *state, int currentPlayer, int handPos){
   //+1 Card
 
   drawCard(currentPlayer, state);
 			
   //+1 Actions
-  state->numActions++;
+  //state->numActions++;
 			
   //discard card from hand
   discardCard(handPos, currentPlayer, state, 0);
@@ -939,7 +939,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
       return 0;
 		
     case great_hall:
-      return greatHall(state, currentPlayer, handPos);
+      return greatHallCard(state, currentPlayer, handPos);
 		
     case minion:
       //+1 action
