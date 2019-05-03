@@ -648,6 +648,7 @@ int adventurerCard(int drawntreasure, struct gameState *state, int currentPlayer
     
     if (state->deckCount[currentPlayer] < 1){ //if the deck is empty we need to shuffle discard and add to deck
       shuffle(currentPlayer, state);
+      //printf("shuffled\n");
     }
     
     drawCard(currentPlayer, state);
@@ -674,6 +675,7 @@ int smithyCard(struct gameState *state, int currentPlayer, int handPos, int i){
   //+3 Cards
   for (i = 0; i <= 3; i++){
     drawCard(currentPlayer, state);
+    //printf("DeckCount: %d\n", state->deckCount[currentPlayer]);
     }
 
     //discard card from hand
@@ -688,11 +690,11 @@ int villageCard(struct gameState *state, int currentPlayer, int handPos){
   drawCard(currentPlayer, state);
 
       //+2 Actions
-      state->numActions = state->numActions + 2;
+  state->numActions = state->numActions + 2;
 
-      //discard played card from hand
-     // discardCard(handPos, currentPlayer, state, 0);
-      return 0;
+  //discard played card from hand
+  // discardCard(handPos, currentPlayer, state, 0);
+   return 0;
 }
 
 int greatHallCard(struct gameState *state, int currentPlayer, int handPos){
@@ -1258,6 +1260,9 @@ int discardCard(int handPos, int currentPlayer, struct gameState *state, int tra
   //if card is not trashed, added to Played pile 
   if (trashFlag < 1)
     {
+      
+      state->discard[currentPlayer][ state->discardCount[currentPlayer] ] = state->hand[currentPlayer][ handPos];
+      state->discardCount[currentPlayer]++;
       //add card to played pile
       state->playedCards[state->playedCardCount] = state->hand[currentPlayer][handPos]; 
       state->playedCardCount++;
@@ -1278,7 +1283,7 @@ int discardCard(int handPos, int currentPlayer, struct gameState *state, int tra
       state->handCount[currentPlayer]--;
     }
   else 	
-    {
+    {   
       //replace discarded card with last card in hand
       state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - 1)];
       //set last card to -1

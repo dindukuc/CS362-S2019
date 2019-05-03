@@ -1,0 +1,85 @@
+----------------- Testing Card: adventurer ----------------
+TEST 1
+hand count = 7, expected = 6
+deck count = 1, expected = 3
+coins = 4, expected = 4
+File 'unittest1.c'
+Lines executed:93.94% of 33
+Creating 'unittest1.c.gcov'
+
+----------------- Testing Card: smithy ----------------
+TEST 1
+hand count = 8, expected = 7
+deck count = 1, expected = 2
+coins = 4, expected = 4
+File 'unittest2.c'
+Lines executed:93.94% of 33
+Creating 'unittest2.c.gcov'
+
+----------------- Testing Card: village ----------------
+TEST 1
+hand count = 6, expected = 5
+deck count = 4, expected = 4
+actions = 3, expected = 3
+coins = 4, expected = 4
+File 'unittest3.c'
+Lines executed:96.67% of 30
+Creating 'unittest3.c.gcov'
+
+----------------- Testing Card: greathall ----------------
+TEST 1
+hand count = 5, expected = 5
+deck count = 4, expected = 4
+actions = 1, expected = 2
+coins = 4, expected = 4
+File 'unittest4.c'
+Lines executed:100.00% of 30
+Creating 'unittest4.c.gcov'
+
+----------------- Testing Card: adventurer ----------------
+TEST 1
+hand count = 7, expected = 6
+deck count = 3, expected = 3
+coins = 4, expected = 4
+File 'cardtest1.c'
+Lines executed:96.43% of 28
+Creating 'cardtest1.c.gcov'
+
+----------------- Testing Card: smithy ----------------
+TEST 1
+hand count = 8, expected = 7
+deck count = 1, expected = 2
+coins = 4, expected = 4
+File 'cardtest2.c'
+Lines executed:92.86% of 28
+Creating 'cardtest2.c.gcov'
+
+----------------- Testing Card: Council Room ----------------
+TEST 1
+hand count = 8, expected = 8
+deck count = 1, expected = 1
+Buys = 2, expected = 2
+Other player's hand count = 1, expected = 1
+Other player's deck count = 9, expected = 9
+File 'cardtest3.c'
+Lines executed:100.00% of 31
+Creating 'cardtest3.c.gcov'
+
+----------------- Testing Card: Minion ----------------
+TEST 1
+coins = 4, expected = 4
+hand count = 4, expected = 4
+deck count = 5, expected = 5
+coins = 6, expected = 6
+actions = 2, expected = 2
+TEST 2
+hand count = 4, expected = 4
+deck count = 5, expected = 5
+coins = 6, expected = 6
+actions = 2, expected = 2
+Other player's hand count = 0, expected = 0
+Other player's deck count = 10, expected = 10
+File 'cardtest4.c'
+Lines executed:98.00% of 50
+Creating 'cardtest4.c.gcov'
+
