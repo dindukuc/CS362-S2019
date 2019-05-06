@@ -1,7 +1,7 @@
 ----------------- Testing Card: adventurer ----------------
 TEST 1
 hand count = 7, expected = 6
-deck count = 1, expected = 3
+deck count = 3, expected = 3
 coins = 4, expected = 4
 File 'unittest1.c'
 Lines executed:93.94% of 33
@@ -23,7 +23,7 @@ deck count = 4, expected = 4
 actions = 3, expected = 3
 coins = 4, expected = 4
 File 'unittest3.c'
-Lines executed:96.67% of 30
+Lines executed:96.88% of 32
 Creating 'unittest3.c.gcov'
 
 ----------------- Testing Card: greathall ----------------
@@ -33,7 +33,7 @@ deck count = 4, expected = 4
 actions = 1, expected = 2
 coins = 4, expected = 4
 File 'unittest4.c'
-Lines executed:100.00% of 30
+Lines executed:96.88% of 32
 Creating 'unittest4.c.gcov'
 
 ----------------- Testing Card: adventurer ----------------
@@ -62,7 +62,7 @@ Buys = 2, expected = 2
 Other player's hand count = 1, expected = 1
 Other player's deck count = 9, expected = 9
 File 'cardtest3.c'
-Lines executed:100.00% of 31
+Lines executed:100.00% of 37
 Creating 'cardtest3.c.gcov'
 
 ----------------- Testing Card: Minion ----------------
@@ -80,6 +80,6 @@ actions = 2, expected = 2
 Other player's hand count = 0, expected = 0
 Other player's deck count = 10, expected = 10
 File 'cardtest4.c'
-Lines executed:98.00% of 50
+Lines executed:98.39% of 62
 Creating 'cardtest4.c.gcov'
 

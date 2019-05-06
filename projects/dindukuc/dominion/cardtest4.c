@@ -65,6 +65,10 @@ int main() {
         assertTrue();
 	if(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards)
         assertTrue();
+	if(testG.numActions == G.numActions + 1)
+        assertTrue();
+    if(testG.coins == G.coins + xtraCoins)
+        assertTrue();
 
 
 
@@ -98,12 +102,18 @@ int main() {
 	printf("Other player's deck count = %d, expected = %d\n", testG.deckCount[thisPlayer+1], G.deckCount[thisPlayer+1] - otherPlayerDraw);
     
    
-    if(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded)
+   if(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded)
         assertTrue();
 	if(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards)
         assertTrue();
-
-  
+	if(testG.numActions == G.numActions + 1)
+        assertTrue();
+    if(testG.coins == G.coins + xtraCoins)
+        assertTrue();
+    if(testG.handCount[thisPlayer+1] == G.handCount[thisPlayer+1] + otherPlayerDraw)
+        assertTrue();
+    if( testG.deckCount[thisPlayer+1] == G.deckCount[thisPlayer+1] - otherPlayerDraw)
+        assertTrue();
 
 
 

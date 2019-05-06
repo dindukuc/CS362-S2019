@@ -59,7 +59,10 @@ int main() {
         assertTrue();
 	if(testG.deckCount[thisPlayer] == G.deckCount[thisPlayer] - newCards + shuffledCards)
         assertTrue();
-	if(testG.coins == G.coins + xtraCoins)
+	if(testG.numActions == G.numActions + 2)
+        assertTrue();
+
+    if(testG.coins == G.coins + xtraCoins)
         assertTrue();
 
 

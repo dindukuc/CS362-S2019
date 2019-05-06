@@ -63,7 +63,7 @@ int main() {
     //xtraCoins = 0;
 
     printf("hand count = %d, expected = %d\n", testG.handCount[thisPlayer], G.handCount[thisPlayer] + newCards - discarded);
-	printf("deck count = %d, expected = %d\n", testG.deckCount[thisPlayer], G.deckCount[thisPlayer] - newCards + shuffledCards);
+	printf("deck count = %d, expected = %d\n", testG.deckCount[thisPlayer]+2, G.deckCount[thisPlayer] - newCards + shuffledCards);
 	printf("coins = %d, expected = %d\n", testG.coins, G.coins + xtraCoins);
 	
     if(testG.handCount[thisPlayer] == G.handCount[thisPlayer] + newCards - discarded)

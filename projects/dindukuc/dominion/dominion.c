@@ -648,7 +648,6 @@ int adventurerCard(int drawntreasure, struct gameState *state, int currentPlayer
     
     if (state->deckCount[currentPlayer] < 1){ //if the deck is empty we need to shuffle discard and add to deck
       shuffle(currentPlayer, state);
-      //printf("shuffled\n");
     }
     
     drawCard(currentPlayer, state);
