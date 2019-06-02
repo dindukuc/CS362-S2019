@@ -27,6 +27,7 @@ int main() {
     int discarded = 1;
     int xtraCoins = 0;
     int shuffledCards = 0;
+    int random;
 
     int handpos = 0, choice1 = 0, choice2 = 0, choice3 = 0, bonus = 0;
     int seed = 5281;
@@ -43,7 +44,8 @@ int main() {
         // initialize a game state and player cards
         initializeGame(numPlayers, k, seed, &G);
         
-        for(int j = 0; j < rand() % 300; j++){
+        random = rand() % 300;
+        for(int j = 0; j < random; j++){
             gainCard(copper, &G, 1, 0);
         }
 

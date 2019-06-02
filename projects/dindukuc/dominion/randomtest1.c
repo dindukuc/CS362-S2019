@@ -47,7 +47,8 @@ int main() {
         G.numBuys = random;
 
         //adds random amount of random cards to each player's deck
-        for(int j = 0; j < rand() % 300; j++){
+        random = rand() % 300;
+        for(int j = 0; j < random; j++){
             gainCard(k[rand() % 10], &G, 1, 0);
             gainCard(k[rand() % 10], &G, 1, 1);
         }
